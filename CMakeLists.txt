@@ -34,3 +34,44 @@ target_compile_definitions(${PROJECT_NAME}
         PRIVATE ${LIBMONGOCXX_DEFINITIONS}
         PRIVATE ${LIBBSONCXX_DEFINITIONS}
         )
+
+
+
+
+
+add_executable(scraper scrape.cpp)
+
+target_include_directories(scraper
+        PRIVATE ${LIBMONGOCXX_INCLUDE_DIRS}
+        PRIVATE ${LIBBSONCXX_INCLUDE_DIRS}
+        )
+
+target_link_libraries(scraper
+        PRIVATE ${CONAN_LIBS}
+        PRIVATE ${LIBMONGOCXX_LIBRARIES}
+        PRIVATE ${LIBBSONCXX_LIBRARIES}
+        )
+
+target_compile_definitions(scraper
+        PRIVATE ${LIBMONGOCXX_DEFINITIONS}
+        PRIVATE ${LIBBSONCXX_DEFINITIONS}
+        )
+
+
+add_executable(uploader uploaddata.cpp magique/card.h magique/card.cpp)
+
+target_include_directories(uploader
+        PRIVATE ${LIBMONGOCXX_INCLUDE_DIRS}
+        PRIVATE ${LIBBSONCXX_INCLUDE_DIRS}
+        )
+
+target_link_libraries(uploader
+        PRIVATE ${CONAN_LIBS}
+        PRIVATE ${LIBMONGOCXX_LIBRARIES}
+        PRIVATE ${LIBBSONCXX_LIBRARIES}
+        )
+
+target_compile_definitions(uploader
+        PRIVATE ${LIBMONGOCXX_DEFINITIONS}
+        PRIVATE ${LIBBSONCXX_DEFINITIONS}
+        )

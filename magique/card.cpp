@@ -106,7 +106,13 @@ card::types_from_array(const std::set<std::string> &types, const std::set<std::s
 void from_json(const nlohmann::json &j, card &p)
 {
     p.name = j.at("name").get<std::string>();
-    p.multiverseid = j.at("multiverseid").get<uint64_t>();
+
+    try
+    {
+        p.multiverseids.emplace_back(j.at("multiverseid").get<uint64_t>());
+    }
+    catch (const std::out_of_range &e)
+    {}
 
     std::set<std::string> supertypes;
     try
@@ -116,14 +122,14 @@ void from_json(const nlohmann::json &j, card &p)
             supertypes = j.at("supertypes").get<std::set<std::string>>();
         }
     }
-    catch (std::out_of_range e)
+    catch (const std::out_of_range &e)
     {}
 
     try
     {
         p.types = card::types_from_array(j.at("types").get<std::set<std::string>>(), supertypes);
     }
-    catch (std::out_of_range e)
+    catch (const std::out_of_range &e)
     {}
 
     try
@@ -306,8 +312,12 @@ void to_json(nlohmann::json &j, const card &p)
 
     j["cmc"] = p.converted_mana_cost;
 
-    j["multiverseid"] = p.multiverseid;
-    j["image_url"] = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid="+std::to_string(p.multiverseid)+"&type=card";
+    j["multiverseids"] = p.multiverseids;
+    if(p.multiverseids.size())
+    {
+        auto latest = *std::max_element(p.multiverseids.begin(), p.multiverseids.end());
+        j["image_url"] = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + std::to_string(latest) + "&type=card";
+    }
 
     //TODO actual mana cost!
 }

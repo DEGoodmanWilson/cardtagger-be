@@ -98,7 +98,7 @@ struct card
 {
     using id_t = uint64_t;
 
-    id_t multiverseid;
+    std::vector<id_t> multiverseids;
 
     enum class color
     {

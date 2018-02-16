@@ -5,7 +5,10 @@
 #pragma once
 
 #include <string>
-#include <unordered_map>
+
+#include <mongocxx/client.hpp>
+#include <mongocxx/instance.hpp>
+
 #include "card.h"
 
 namespace magique
@@ -14,14 +17,18 @@ namespace magique
 class catalog
 {
 public:
-    catalog(std::string filename, std::string annotations_filename="");
+    catalog(std::string url);
 
-    const card &at(std::string name) const;
-    const card &at(uint64_t name) const;
+    std::string at(std::string name);
+
+    std::string random();
 
 private:
     std::unordered_map<std::string, card> cards_by_name_;
-    std::unordered_map<uint64_t, card> cards_by_id_;
+
+    mongocxx::instance mongo_inst_;
+    mongocxx::client mongo_conn_;
+    mongocxx::collection catalog_;
 };
 
 }

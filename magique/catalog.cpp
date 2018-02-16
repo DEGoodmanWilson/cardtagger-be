@@ -3,50 +3,44 @@
 //
 
 #include "catalog.h"
-#include <json.hpp>
-#include <fstream>
+
+#include <exception>
+
+#include <bsoncxx/builder/stream/document.hpp>
+#include <bsoncxx/json.hpp>
+
+using bsoncxx::builder::stream::close_array;
+using bsoncxx::builder::stream::close_document;
+using bsoncxx::builder::stream::document;
+using bsoncxx::builder::stream::finalize;
+using bsoncxx::builder::stream::open_array;
+using bsoncxx::builder::stream::open_document;
 
 namespace magique
 {
 
-catalog::catalog(std::string filename)
+catalog::catalog(std::string url) :
+        mongo_inst_{}, mongo_conn_{mongocxx::uri{url}}, catalog_{mongo_conn_["magique"]["catalog"]}
+{}
+
+std::string catalog::at(std::string name)
 {
-    std::ifstream ifs(filename);
-    nlohmann::json card_list_json{ifs};
-    ifs.close();
-
-
-    //assume for now that it is just a vector of cards
-    for (auto &card_json: card_list_json)
+    auto result = catalog_.find_one(document{} << "name" << name << finalize);
+    if (result)
     {
-        auto id = card_json["multiverseid"].get<int>();
-        cards_by_id_[id] = card_json;
-
-        auto name = card_json["name"].get<std::string>();
-        cards_by_name_[name] = card_json;
+        auto json = bsoncxx::to_json(result->view());
+        std::cout << json << std::endl;
+        return json;
     }
+
+    throw std::out_of_range{"Could not find " + name};
 }
 
-const card &catalog::at(std::string name) const
+std::string catalog::random()
 {
-    return cards_by_name_.at(name); //will throw std::out_of_range if not found
+    auto result = catalog_.aggregate(mongocxx::pipeline{}.sample(1));
+    auto json = bsoncxx::to_json(*result.begin());
+    std::cout << json << std::endl;
+    return json;
 }
-
-const card &catalog::at(uint64_t id) const
-{
-    return cards_by_id_.at(id); //will throw std::out_of_range if not found
-}
-
-void catalog::insert(const card &card)
-{
-    cards_by_id_[card.multiverseid] = card;
-    cards_by_name_[card.name] = card;
-}
-
-void catalog::insert(::magique::card &&card)
-{
-    cards_by_id_.emplace(card.multiverseid, std::move(card));
-    cards_by_name_.emplace(card.name, std::move(card));
-}
-
 }

@@ -3,12 +3,6 @@
 #include <luna/luna.h>
 #include <json.hpp>
 
-//#include <bsoncxx/builder/stream/document.hpp>
-//#include <bsoncxx/json.hpp>
-//
-//#include <mongocxx/client.hpp>
-//#include <mongocxx/instance.hpp>
-
 #include "magique/catalog.h"
 
 void error_logger(luna::log_level level, const std::string &message)
@@ -36,8 +30,10 @@ void error_logger(luna::log_level level, const std::string &message)
 void access_logger(const luna::request &request, const luna::response &response)
 {
     std::cout << request.ip_address << ": " << luna::to_string(request.method) << " [" << response.status_code << "] "
-              << request.path << " " << request.http_version << " " << (request.headers.count("user-agent") ? request.headers.at("user-agent") : "[no user-agent]") << " { "
-              << std::chrono::duration_cast<std::chrono::microseconds>(request.end - request.start).count() << "us } " << std::endl;
+              << request.path << " " << request.http_version << " "
+              << (request.headers.count("user-agent") ? request.headers.at("user-agent") : "[no user-agent]") << " { "
+              << std::chrono::duration_cast<std::chrono::microseconds>(request.end - request.start).count() << "us } "
+              << std::endl;
 }
 
 
@@ -54,54 +50,70 @@ int main(int, char **)
         }
         catch (const std::exception &e)
         {
-            error_logger(luna::log_level::FATAL, "Invalid port specified in env $PORT.");
+            error_logger(luna::log_level::FATAL, "Invalid port specified in env PORT.");
             return 1;
         }
+    }
+
+    auto my_uri = std::getenv("MONGO_URI");
+
+    if (!my_uri)
+    {
+        error_logger(luna::log_level::FATAL, "Invalid url specified in env MONGO_URI.");
+        return 1;
     }
 
 
 
     // load up the card catalog
-    magique::catalog catalog{"data/catalog.json"};
+    magique::catalog catalog{my_uri};
 
     // add endpoint handlers
     luna::router api{"/api/v1/card/"};
 
     api.set_mime_type("application/json");
 
-    api.handle_request(luna::request_method::GET, std::regex{R"(([0-9]+))"}, [&](const auto &request) -> luna::response
+    api.handle_request(luna::request_method::GET, std::regex{R"(/(.*))"}, [&](const auto &request) -> luna::response
     {
-        auto id =  std::atoll(request.matches[1].c_str());
-        nlohmann::json j;
+
+        if (request.params.count("random"))
+        {
+            return catalog.random();
+        }
         try
         {
-            j = catalog.at(id);
+            return catalog.at(request.matches[1]);
         }
         catch (std::exception e)
         {
             return 404;
         }
 
-        return j.dump();
+        return 404;
+    }, {
+            {"random", false}
     });
 
     // fire up the webserver
+    luna::set_error_logger(error_logger);
+    luna::set_access_logger(access_logger);
     luna::server server;
+    server.add_router(api);
     server.start(port);
 
     return 0;
-//    mongocxx::instance inst{};
-//    mongocxx::client conn{mongocxx::uri{}};
-//
-//    bsoncxx::builder::stream::document document{};
-//
-//    auto collection = conn["testdb"]["testcollection"];
-//    document << "hello" << "world";
-//
-//    collection.insert_one(document.view());
-//    auto cursor = collection.find({});
-//
-//    for (auto&& doc : cursor) {
-//        std::cout << bsoncxx::to_json(doc) << std::endl;
-//    }
+    //    mongocxx::instance inst{};
+    //    mongocxx::client conn{mongocxx::uri{}};
+    //
+    //    bsoncxx::builder::stream::document document{};
+    //
+    //    auto collection = conn["testdb"]["testcollection"];
+    //    document << "hello" << "world";
+    //
+    //    collection.insert_one(document.view());
+    //    auto cursor = collection.find({});
+    //
+    //    for (auto&& doc : cursor) {
+    //        std::cout << bsoncxx::to_json(doc) << std::endl;
+    //    }
 }
