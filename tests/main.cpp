@@ -16,33 +16,24 @@
 // Copyright © 2018 D.E. Goodman-Wilson
 //
 
-#pragma once
 
-#include <string>
+#define CATCH_CONFIG_RUNNER
+#include <catch.hpp>
 
-#include <mongocxx/client.hpp>
-#include <mongocxx/instance.hpp>
+std::string hostname{"http://localhost"};
 
-#include "card.h"
-
-namespace magique
+int main( int argc, char* argv[] )
 {
+    if (auto port = std::getenv("PORT"))
+    {
+        hostname = hostname + ":" + port;
+    }
+    else
+    {
+        hostname = hostname + ":8080";
+    }
 
-class catalog
-{
-public:
-    catalog();
+    int result = Catch::Session().run( argc, argv );
 
-    std::string at(std::string name);
-
-    std::string random();
-
-private:
-    std::unordered_map<std::string, card> cards_by_name_;
-
-    mongocxx::instance mongo_inst_;
-    mongocxx::client mongo_conn_;
-    mongocxx::collection catalog_;
-};
-
+    return ( result < 0xff ? result : 0xff );
 }

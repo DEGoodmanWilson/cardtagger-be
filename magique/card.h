@@ -1,5 +1,19 @@
 //
-// Created by Don Goodman-Wilson on 13/11/2017.
+//      ____________________________
+//      \____  \____  \____  \____  \_
+//       /   ___/  _/  /   /__/ __/  /
+//      /   /__/   /  /   /  / /_/  /
+//     /______/___   /___/__/___   /_____________________________
+//               /__/  \___    /__/_ \____  \____  \____  \____  \_
+//                      /   ___/  _/  /   /__/   /__/   ___/   /__/
+//                     /   /  /   /  /   /__    /__    ___/   /  /
+//                    /___/  /___   /___   /___   /___   /___/__/
+//                              /__/   /__/   /__/   /__/   /
+//
+// cardtagger
+// A web application for classifying collectible playing cards
+//
+// Copyright © 2018 D.E. Goodman-Wilson
 //
 
 #pragma once
@@ -98,7 +112,7 @@ struct card
 {
     using id_t = uint64_t;
 
-    std::vector<id_t> multiverseids;
+    std::set<id_t> multiverseids;
 
     enum class color
     {

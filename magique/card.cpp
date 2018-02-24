@@ -1,5 +1,19 @@
 //
-// Created by Don Goodman-Wilson on 13/11/2017.
+//      ____________________________
+//      \____  \____  \____  \____  \_
+//       /   ___/  _/  /   /__/ __/  /
+//      /   /__/   /  /   /  / /_/  /
+//     /______/___   /___/__/___   /_____________________________
+//               /__/  \___    /__/_ \____  \____  \____  \____  \_
+//                      /   ___/  _/  /   /__/   /__/   ___/   /__/
+//                     /   /  /   /  /   /__    /__    ___/   /  /
+//                    /___/  /___   /___   /___   /___   /___/__/
+//                              /__/   /__/   /__/   /__/   /
+//
+// cardtagger
+// A web application for classifying collectible playing cards
+//
+// Copyright © 2018 D.E. Goodman-Wilson
 //
 
 #include <regex>
@@ -107,12 +121,7 @@ void from_json(const nlohmann::json &j, card &p)
 {
     p.name = j.at("name").get<std::string>();
 
-    try
-    {
-        p.multiverseids.emplace_back(j.at("multiverseid").get<uint64_t>());
-    }
-    catch (const std::out_of_range &e)
-    {}
+    p.multiverseids = j.at("multiverseids").get<std::set<uint64_t>>();
 
     std::set<std::string> supertypes;
     try

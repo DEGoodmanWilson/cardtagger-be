@@ -16,13 +16,17 @@
 #  Copyright © 2018 D.E. Goodman-Wilson
 #
 
-[requires]
-luna/[~=4.0]@DEGoodmanWilson/stable
-nl-json/[~=2.1]@genvidtech/1.4.0
+cmake_minimum_required(VERSION 3.5)
 
-# for testing
-cpr/1.2.0@DEGoodmanWilson/stable
-Catch/1.9.6@bincrafters/stable
+enable_testing()
 
-[generators]
-cmake
+add_executable(${PROJECT_NAME}_tests
+        main.cpp
+        env.h
+        auth.cpp
+        ../models/auth.cpp ../models/auth.h
+        )
+
+target_link_libraries(${PROJECT_NAME}_tests ${CONAN_LIBS})
+
+add_test(${PROJECT_NAME} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}_tests)

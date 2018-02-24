@@ -18,31 +18,20 @@
 
 #pragma once
 
-#include <string>
+#include <luna/luna.h>
+#include <json.hpp>
+#include "../magique/catalog.h"
 
-#include <mongocxx/client.hpp>
-#include <mongocxx/instance.hpp>
 
-#include "card.h"
-
-namespace magique
-{
-
-class catalog
+class card_controller
 {
 public:
-    catalog();
-
-    std::string at(std::string name);
-
-    std::string random();
+    card_controller(luna::router &router);
 
 private:
-    std::unordered_map<std::string, card> cards_by_name_;
-
-    mongocxx::instance mongo_inst_;
-    mongocxx::client mongo_conn_;
-    mongocxx::collection catalog_;
+    // TODO PIMPL this.
+    luna::response get_card_by_name_(const luna::request &request);
+    luna::response get_random_card_(const luna::request &request);
+    luna::response update_card_(const luna::request &request);
+    magique::catalog catalog_;
 };
-
-}

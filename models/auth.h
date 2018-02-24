@@ -19,30 +19,21 @@
 #pragma once
 
 #include <string>
+#include <luna/optional.hpp>
 
-#include <mongocxx/client.hpp>
-#include <mongocxx/instance.hpp>
-
-#include "card.h"
-
-namespace magique
+namespace auth
 {
 
-class catalog
-{
-public:
-    catalog();
+// Logging in returns a key that can be used for a limited time, and perhaps with other restrictions.
 
-    std::string at(std::string name);
+bool create_account(const std::string &username, const std::string &password);
 
-    std::string random();
+bool delete_account(const std::string &key);
 
-private:
-    std::unordered_map<std::string, card> cards_by_name_;
+std::experimental::optional<std::string> login(const std::string &username, const std::string &password);
 
-    mongocxx::instance mongo_inst_;
-    mongocxx::client mongo_conn_;
-    mongocxx::collection catalog_;
-};
+bool test(const std::string &key);
+
+void logout(const std::string &key);
 
 }

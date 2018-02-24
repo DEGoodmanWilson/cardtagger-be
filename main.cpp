@@ -1,16 +1,36 @@
+//
+//      ____________________________
+//      \____  \____  \____  \____  \_
+//       /   ___/  _/  /   /__/ __/  /
+//      /   /__/   /  /   /  / /_/  /
+//     /______/___   /___/__/___   /_____________________________
+//               /__/  \___    /__/_ \____  \____  \____  \____  \_
+//                      /   ___/  _/  /   /__/   /__/   ___/   /__/
+//                     /   /  /   /  /   /__    /__    ___/   /  /
+//                    /___/  /___   /___   /___   /___   /___/__/
+//                              /__/   /__/   /__/   /__/   /
+//
+// cardtagger
+// A web application for classifying collectible playing cards
+//
+// Copyright © 2018 D.E. Goodman-Wilson
+//
+
 #include <iostream>
 
 #include <luna/luna.h>
 #include <json.hpp>
 
 #include "magique/catalog.h"
+#include "controllers/auth_controller.h"
+#include "controllers/card_controller.h"
 
 void error_logger(luna::log_level level, const std::string &message)
 {
     switch (level)
     {
         case luna::log_level::DEBUG:
-//            std::cerr << "[  DEBUG] " << message << std::endl;
+            std::cerr << "[  DEBUG] " << message << std::endl;
             break;
         case luna::log_level::INFO:
             std::cerr << "[   INFO] " << message << std::endl;
@@ -55,44 +75,13 @@ int main(int, char **)
         }
     }
 
-    auto my_uri = std::getenv("MONGO_URI");
-
-    if (!my_uri)
-    {
-        error_logger(luna::log_level::FATAL, "Invalid url specified in env MONGO_URI.");
-        return 1;
-    }
-
-
-
-    // load up the card catalog
-    magique::catalog catalog{my_uri};
-
     // add endpoint handlers
-    luna::router api{"/api/v1/card/"};
+    luna::router api{"/api/v1"};
 
     api.set_mime_type("application/json");
 
-    api.handle_request(luna::request_method::GET, std::regex{R"(/(.*))"}, [&](const auto &request) -> luna::response
-    {
-
-        if (request.params.count("random"))
-        {
-            return catalog.random();
-        }
-        try
-        {
-            return catalog.at(request.matches[1]);
-        }
-        catch (std::exception e)
-        {
-            return 404;
-        }
-
-        return 404;
-    }, {
-            {"random", false}
-    });
+    auth_controller::create(api);
+    card_controller card_c(api);
 
     // fire up the webserver
     luna::set_error_logger(error_logger);

@@ -1,5 +1,19 @@
 //
-// Created by Don Goodman-Wilson on 13/11/2017.
+//      ____________________________
+//      \____  \____  \____  \____  \_
+//       /   ___/  _/  /   /__/ __/  /
+//      /   /__/   /  /   /  / /_/  /
+//     /______/___   /___/__/___   /_____________________________
+//               /__/  \___    /__/_ \____  \____  \____  \____  \_
+//                      /   ___/  _/  /   /__/   /__/   ___/   /__/
+//                     /   /  /   /  /   /__    /__    ___/   /  /
+//                    /___/  /___   /___   /___   /___   /___/__/
+//                              /__/   /__/   /__/   /__/   /
+//
+// cardtagger
+// A web application for classifying collectible playing cards
+//
+// Copyright © 2018 D.E. Goodman-Wilson
 //
 
 #include "catalog.h"
@@ -19,9 +33,20 @@ using bsoncxx::builder::stream::open_document;
 namespace magique
 {
 
-catalog::catalog(std::string url) :
-        mongo_inst_{}, mongo_conn_{mongocxx::uri{url}}, catalog_{mongo_conn_["magique"]["catalog"]}
-{}
+catalog::catalog() :
+        mongo_inst_{}
+{
+    auto my_uri = std::getenv("MONGO_URI");
+
+    if (!my_uri)
+    {
+        std::cerr << "Invalid url specified in env MONGO_URI." << std::endl;
+        exit(1); // TODO should throw an exception.
+    }
+
+    mongo_conn_ = mongocxx::uri{my_uri};
+    catalog_ = mongo_conn_["magique"]["catalog"];
+}
 
 std::string catalog::at(std::string name)
 {
@@ -29,7 +54,6 @@ std::string catalog::at(std::string name)
     if (result)
     {
         auto json = bsoncxx::to_json(result->view());
-        std::cout << json << std::endl;
         return json;
     }
 
@@ -40,7 +64,6 @@ std::string catalog::random()
 {
     auto result = catalog_.aggregate(mongocxx::pipeline{}.sample(1));
     auto json = bsoncxx::to_json(*result.begin());
-    std::cout << json << std::endl;
     return json;
 }
 }
