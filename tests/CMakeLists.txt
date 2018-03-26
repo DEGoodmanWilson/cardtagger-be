@@ -24,7 +24,6 @@ add_executable(${PROJECT_NAME}_tests
         main.cpp
         env.h
         auth.cpp
-        ../models/auth.cpp ../models/auth.h
         )
 
 target_link_libraries(${PROJECT_NAME}_tests ${CONAN_LIBS})

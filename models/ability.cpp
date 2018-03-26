@@ -16,28 +16,4 @@
 // Copyright © 2018 D.E. Goodman-Wilson
 //
 
-#pragma once
-
-#include <nlohmann/json.hpp>
-#include <set>
-
-namespace magique
-{
-
-struct card_delta
-{
-    std::string user_id;
-    struct additions
-    {
-        std::set<std::string> abilities;
-    } additions;
-    struct subtractions
-    {
-        std::set<std::string> abilities;
-    } subtractions;
-};
-
-void to_json(nlohmann::json &j, const card_delta &p);
-
-void from_json(const nlohmann::json &j, card_delta &p);
-}
+#include "ability.h"

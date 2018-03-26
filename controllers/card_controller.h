@@ -19,19 +19,10 @@
 #pragma once
 
 #include <luna/luna.h>
-#include <nlohmann/json.hpp>
-#include "../magique/catalog.h"
 
-
-class card_controller
+namespace card_controller
 {
-public:
-    card_controller(std::shared_ptr<luna::router> router);
 
-private:
-    // TODO PIMPL this.
-    luna::response get_card_by_name_(const luna::request &request);
-    luna::response get_random_card_(const luna::request &request);
-    luna::response update_card_(const luna::request &request);
-    magique::catalog catalog_;
-};
+void create(std::shared_ptr<luna::router> router);
+
+}

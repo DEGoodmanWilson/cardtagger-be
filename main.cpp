@@ -21,8 +21,8 @@
 #include <luna/luna.h>
 #include <nlohmann/json.hpp>
 
-#include "magique/catalog.h"
-#include "controllers/auth_controller.h"
+#include <mongocxx/instance.hpp>
+
 #include "controllers/card_controller.h"
 
 void error_logger(luna::log_level level, const std::string &message)
@@ -75,6 +75,8 @@ int main(int, char **)
         }
     }
 
+    mongocxx::instance instance{};
+
     luna::server server;
 
     // add endpoint handlers
@@ -82,13 +84,13 @@ int main(int, char **)
 
     api->set_mime_type("application/json");
 
-    auth_controller::create(api);
-    card_controller card_c(api);
+    card_controller::create(api);
 
     // fire up the webserver
     luna::set_error_logger(error_logger);
     luna::set_access_logger(access_logger);
     server.start(port);
+
 
     return 0;
     //    mongocxx::instance inst{};

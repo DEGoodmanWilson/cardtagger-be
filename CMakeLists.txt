@@ -30,11 +30,11 @@ find_package(libmongocxx REQUIRED)
 find_package(libbsoncxx REQUIRED)
 
 set(SOURCE_FILES
-        magique/card.h magique/card.cpp
-        magique/catalog.h magique/catalog.cpp
-        controllers/auth_controller.h controllers/auth_controller.cpp
         main.cpp
-        models/auth.cpp models/auth.h controllers/card_controller.cpp controllers/card_controller.h magique/card_delta.cpp magique/card_delta.h)
+        controllers/card_controller.cpp
+        controllers/card_controller.h
+        models/ability.cpp models/ability.h
+        )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
@@ -57,41 +57,3 @@ target_compile_definitions(${PROJECT_NAME}
 
 # Tests
 add_subdirectory(tests)
-
-
-#add_executable(scraper scrape.cpp)
-#
-#target_include_directories(scraper
-#        PRIVATE ${LIBMONGOCXX_INCLUDE_DIRS}
-#        PRIVATE ${LIBBSONCXX_INCLUDE_DIRS}
-#        )
-#
-#target_link_libraries(scraper
-#        PRIVATE ${CONAN_LIBS}
-#        PRIVATE ${LIBMONGOCXX_LIBRARIES}
-#        PRIVATE ${LIBBSONCXX_LIBRARIES}
-#        )
-#
-#target_compile_definitions(scraper
-#        PRIVATE ${LIBMONGOCXX_DEFINITIONS}
-#        PRIVATE ${LIBBSONCXX_DEFINITIONS}
-#        )
-#
-#
-#add_executable(uploader uploaddata.cpp magique/card.h magique/card.cpp)
-#
-#target_include_directories(uploader
-#        PRIVATE ${LIBMONGOCXX_INCLUDE_DIRS}
-#        PRIVATE ${LIBBSONCXX_INCLUDE_DIRS}
-#        )
-#
-#target_link_libraries(uploader
-#        PRIVATE ${CONAN_LIBS}
-#        PRIVATE ${LIBMONGOCXX_LIBRARIES}
-#        PRIVATE ${LIBBSONCXX_LIBRARIES}
-#        )
-#
-#target_compile_definitions(uploader
-#        PRIVATE ${LIBMONGOCXX_DEFINITIONS}
-#        PRIVATE ${LIBBSONCXX_DEFINITIONS}
-#        )

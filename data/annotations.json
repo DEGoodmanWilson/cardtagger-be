@@ -1,37 +1,43 @@
-{
-  "Accomplished Automaton": {
+[
+  {
+    "name": "Accomplished Automaton",
     "abilities": [
       "+counter_self",
       "create_token"
     ]
   },
-  "Acrobatic Maneuver": {
+  {
+    "name": "Acrobatic Maneuver",
     "abilities": [
-      "flicker_other",
+      "Flicker",
       "draw_cards"
     ]
   },
-  "Aegis Automaton": {
+  {
+    "name": "Aegis Automaton",
     "abilities": [
       "return_own_to_hand"
     ]
   },
-  "Aerial Responder": {
+  {
+    "name": "Aerial Responder",
     "abilities": [
-      "flying",
+      "Flying",
       "lifelink",
       "vigilance"
     ]
   },
-  "Aeronaut Admiral": {
+  {
+    "name": "Aeronaut Admiral",
     "abilities": [
-      "flying"
+      "Flying"
     ],
     "affinities": [
       "Vehicle"
     ]
   },
-  "Aether Chaser": {
+  {
+    "name": "Aether Chaser",
     "abilities": [
       "create_token",
       "energy_sink",
@@ -42,7 +48,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Aether Herder": {
+  {
+    "name": "Aether Herder",
     "abilities": [
       "create_token",
       "energy_sink",
@@ -52,7 +59,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Aether Inspector": {
+  {
+    "name": "Aether Inspector",
     "abilities": [
       "create_token",
       "energy_sink",
@@ -63,7 +71,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Aether Meltdown": {
+  {
+    "name": "Aether Meltdown",
     "abilities": [
       "flash",
       "energy_source",
@@ -73,7 +82,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Aether Poisoner": {
+  {
+    "name": "Aether Poisoner",
     "abilities": [
       "create_token",
       "deathtouch",
@@ -84,18 +94,20 @@
       "enters_the_battlefield"
     ]
   },
-  "Aether Swooper": {
+  {
+    "name": "Aether Swooper",
     "abilities": [
       "create_token",
       "energy_sink",
       "energy_source",
-      "flying"
+      "Flying"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Aether Theorist": {
+  {
+    "name": "Aether Theorist",
     "abilities": [
       "energy_sink",
       "energy_source",
@@ -105,37 +117,41 @@
       "enters_the_battlefield"
     ]
   },
-  "Aether Tradewinds": {
+  {
+    "name": "Aether Tradewinds",
     "abilities": [
       "return_opponent_to_hand",
       "return_own_to_hand"
     ]
   },
-  "Aetherborn Marauder": {
+  {
+    "name": "Aetherborn Marauder",
     "abilities": [
-      "flying",
+      "Flying",
       "lifelink"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Aethergeode Miner": {
+  {
+    "name": "Aethergeode Miner",
     "abilities": [
       "energy_sink",
       "energy_source",
-      "flicker_self"
+      "Flicker"
     ],
     "affinities": [
       "revolt"
     ]
   },
-  "Aetherstorm Roc": {
+  {
+    "name": "Aetherstorm Roc",
     "abilities": [
       "+counter_self",
       "energy_sink",
       "energy_source",
-      "flying"
+      "Flying"
     ],
     "affinities": [
       "Creature"
@@ -144,7 +160,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Aetherstream Leopard": {
+  {
+    "name": "Aetherstream Leopard",
     "abilities": [
       "buff_self",
       "energy_sink",
@@ -155,17 +172,20 @@
       "enters_the_battlefield"
     ]
   },
-  "Ahn-Crop Crasher": {
+  {
+    "name": "Ahn-Crop Crasher",
     "abilities": [
       "haste"
     ]
   },
-  "Air Elemental": {
+  {
+    "name": "Air Elemental",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Ajani Unyielding": {
+  {
+    "name": "Ajani Unyielding",
     "abilities": [
       "+counter_other",
       "draw_cards",
@@ -176,7 +196,8 @@
       "Planeswalker"
     ]
   },
-  "Alley Evasion": {
+  {
+    "name": "Alley Evasion",
     "abilities": [
       "buff_other",
       "return_own_to_hand"
@@ -185,14 +206,16 @@
       "Creature"
     ]
   },
-  "Alley Strangler": {
+  {
+    "name": "Alley Strangler",
     "abilities": [
       "menace"
     ]
   },
-  "Angler Drake": {
+  {
+    "name": "Angler Drake",
     "abilities": [
-      "flying",
+      "Flying",
       "return_opponent_to_hand",
       "return_own_to_hand"
     ],
@@ -200,13 +223,15 @@
       "enters_the_battlefield"
     ]
   },
-  "Appetite for the Unnatural": {
+  {
+    "name": "Appetite for the Unnatural",
     "abilities": [
       "heal",
       "removal"
     ]
   },
-  "Arborback Stomper": {
+  {
+    "name": "Arborback Stomper",
     "abilities": [
       "heal",
       "trample"
@@ -215,23 +240,27 @@
       "enters_the_battlefield"
     ]
   },
-  "Attune with Aether": {
+  {
+    "name": "Attune with Aether",
     "abilities": [
       "tutor_land",
       "energy_source"
     ]
   },
-  "Audacious Infiltrator": {
+  {
+    "name": "Audacious Infiltrator",
     "abilities": [
       "unblockable"
     ]
   },
-  "Augmenting Automaton": {
+  {
+    "name": "Augmenting Automaton",
     "abilities": [
       "buff_self"
     ]
   },
-  "Aviary Mechanic": {
+  {
+    "name": "Aviary Mechanic",
     "abilities": [
       "return_own_to_hand"
     ],
@@ -239,7 +268,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Baleful Ammit": {
+  {
+    "name": "Baleful Ammit",
     "abilities": [
       "-counter_other",
       "lifelink"
@@ -248,13 +278,15 @@
       "enters_the_battlefield"
     ]
   },
-  "Ballista Charger": {
+  {
+    "name": "Ballista Charger",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
     ]
   },
-  "Baral, Chief of Compliance": {
+  {
+    "name": "Baral, Chief of Compliance",
     "abilities": [
       "discard_cards",
       "draw_cards",
@@ -266,50 +298,58 @@
       "counter"
     ]
   },
-  "Bastion Inventor": {
+  {
+    "name": "Bastion Inventor",
     "abilities": [
       "hexproof",
       "improvise"
     ]
   },
-  "Bitterblade Warrior": {
+  {
+    "name": "Bitterblade Warrior",
     "abilities": [
       "buff_self",
       "deathtouch"
     ]
   },
-  "Bloodhunter Bat": {
+  {
+    "name": "Bloodhunter Bat",
     "abilities": [
       "direct_damage_player",
-      "flying",
+      "Flying",
       "heal"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Bloodlust Inciter": {
+  {
+    "name": "Bloodlust Inciter",
     "abilities": [
       "grant_haste"
     ]
   },
-  "Blossoming Defense": {
+  {
+    "name": "Blossoming Defense",
     "abilities": [
       "buff_other",
       "grant_hexproof"
     ]
   },
-  "Brazen Scourge": {
+  {
+    "name": "Brazen Scourge",
     "abilities": [
       "haste"
     ]
   },
-  "Built to Last": {
+  {
+    "name": "Built to Last",
     "abilities": [
       "buff_other"
     ]
   },
-  "Cartouche of Ambition": {
+  {
+    "name": "Cartouche of Ambition",
     "abilities": [
       "buff_other",
       "debuff_other",
@@ -319,7 +359,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Cartouche of Knowledge": {
+  {
+    "name": "Cartouche of Knowledge",
     "abilities": [
       "buff_other",
       "draw_cards",
@@ -329,7 +370,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Cartouche of Solidarity": {
+  {
+    "name": "Cartouche of Solidarity",
     "abilities": [
       "buff_other",
       "create_token",
@@ -339,7 +381,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Cartouche of Strength": {
+  {
+    "name": "Cartouche of Strength",
     "abilities": [
       "buff_other",
       "grant_trample"
@@ -348,7 +391,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Cartouche of Zeal": {
+  {
+    "name": "Cartouche of Zeal",
     "abilities": [
       "buff_other",
       "grant_haste"
@@ -357,7 +401,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Cataclysmic Gearhulk": {
+  {
+    "name": "Cataclysmic Gearhulk",
     "abilities": [
       "removal",
       "vigilance"
@@ -366,37 +411,43 @@
       "enters_the_battlefield"
     ]
   },
-  "Cathartic Reunion": {
+  {
+    "name": "Cathartic Reunion",
     "abilities": [
       "draw_cards"
     ]
   },
-  "Caught in the Brights": {
+  {
+    "name": "Caught in the Brights",
     "abilities": [
       "grant_cannot_attack",
       "grant_cannot_block",
       "removal"
     ]
   },
-  "Censor": {
+  {
+    "name": "Censor",
     "abilities": [
       "counter",
       "cycling"
     ]
   },
-  "Chandra's Pyrohelix": {
+  {
+    "name": "Chandra's Pyrohelix",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
     ]
   },
-  "Chandra's Revolution": {
+  {
+    "name": "Chandra's Revolution",
     "abilities": [
       "direct_damage_creature",
       "force_tap_land"
     ]
   },
-  "Chief of the Foundry": {
+  {
+    "name": "Chief of the Foundry",
     "abilities": [
       "buff_other"
     ],
@@ -405,7 +456,8 @@
       "Creature"
     ]
   },
-  "Cogwork Assembler": {
+  {
+    "name": "Cogwork Assembler",
     "abilities": [
       "copy_card",
       "grant_haste"
@@ -414,7 +466,8 @@
       "Artifact"
     ]
   },
-  "Cogworker's Puzzleknot": {
+  {
+    "name": "Cogworker's Puzzleknot",
     "abilities": [
       "create_token"
     ],
@@ -422,12 +475,14 @@
       "enters_the_battlefield"
     ]
   },
-  "Commencement of Festivities": {
+  {
+    "name": "Commencement of Festivities",
     "abilities": [
       "prevent_damage"
     ]
   },
-  "Compulsory Rest": {
+  {
+    "name": "Compulsory Rest",
     "abilities": [
       "grant_cannot_attack",
       "grant_cannot_block",
@@ -435,7 +490,8 @@
       "removal"
     ]
   },
-  "Consulate Crackdown": {
+  {
+    "name": "Consulate Crackdown",
     "abilities": [
       "removal"
     ],
@@ -443,13 +499,15 @@
       "enters_the_battlefield"
     ]
   },
-  "Consulate Skygate": {
+  {
+    "name": "Consulate Skygate",
     "abilities": [
       "defender",
       "reach"
     ]
   },
-  "Contraband Kingpin": {
+  {
+    "name": "Contraband Kingpin",
     "abilities": [
       "lifelink",
       "scry"
@@ -458,18 +516,21 @@
       "Artifact"
     ]
   },
-  "Conviction": {
+  {
+    "name": "Conviction",
     "abilities": [
       "buff_other,"
     ]
   },
-  "Countless Gears Renegade": {
+  {
+    "name": "Countless Gears Renegade",
     "abilities": [
       "create_token",
       "revolt"
     ]
   },
-  "Crocodile of the Crossing": {
+  {
+    "name": "Crocodile of the Crossing",
     "abilities": [
       "-counter_other",
       "haste"
@@ -478,37 +539,43 @@
       "enters_the_battlefield"
     ]
   },
-  "Cruel Finality": {
+  {
+    "name": "Cruel Finality",
     "abilities": [
       "debuff_other",
       "scry"
     ]
   },
-  "Cursed Minotaur": {
+  {
+    "name": "Cursed Minotaur",
     "abilities": [
       "menace"
     ]
   },
-  "Daring Demolition": {
+  {
+    "name": "Daring Demolition",
     "abilities": [
       "removal"
     ]
   },
-  "Dawnfeather Eagle": {
+  {
+    "name": "Dawnfeather Eagle",
     "abilities": [
       "buff_other",
-      "flying"
+      "Flying"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Decision Paralysis": {
+  {
+    "name": "Decision Paralysis",
     "abilities": [
       "force_tap_creature"
     ]
   },
-  "Decoction Module": {
+  {
+    "name": "Decoction Module",
     "abilities": [
       "energy_source",
       "return_own_to_hand"
@@ -517,14 +584,16 @@
       "Creature"
     ]
   },
-  "Decommission": {
+  {
+    "name": "Decommission",
     "abilities": [
       "heal",
       "removal",
       "revolt"
     ]
   },
-  "Defiant Salvager": {
+  {
+    "name": "Defiant Salvager",
     "abilities": [
       "+counter_self",
       "sacrifice"
@@ -534,13 +603,15 @@
       "Creature"
     ]
   },
-  "Destructive Tampering": {
+  {
+    "name": "Destructive Tampering",
     "abilities": [
       "grant_cannot_block",
       "removal"
     ]
   },
-  "Dhund Operative": {
+  {
+    "name": "Dhund Operative",
     "abilities": [
       "buff_self",
       "deathtouch"
@@ -549,12 +620,14 @@
       "Artifact"
     ]
   },
-  "Diabolic Tutor": {
+  {
+    "name": "Diabolic Tutor",
     "abilities": [
       "tutor"
     ]
   },
-  "Dispersal Technician": {
+  {
+    "name": "Dispersal Technician",
     "abilities": [
       "return_own_to_hand"
     ],
@@ -565,34 +638,40 @@
       "enters_the_battlefield"
     ]
   },
-  "Divine Verdict": {
+  {
+    "name": "Divine Verdict",
     "abilities": [
       "removal"
     ]
   },
-  "Djeru's Resolve": {
+  {
+    "name": "Djeru's Resolve",
     "abilities": [
       "cycling",
       "prevent_damage",
       "untap_creature"
     ]
   },
-  "Doomed Dissenter": {
+  {
+    "name": "Doomed Dissenter",
     "abilities": [
       "create_token"
     ]
   },
-  "Druid of the Cowl": {
+  {
+    "name": "Druid of the Cowl",
     "abilities": [
       "mana_acceleration"
     ]
   },
-  "Dukhara Peafowl": {
+  {
+    "name": "Dukhara Peafowl",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Dukhara Scavenger": {
+  {
+    "name": "Dukhara Scavenger",
     "abilities": [
       "graveyard_to_library"
     ],
@@ -600,12 +679,14 @@
       "enters_the_battlefield"
     ]
   },
-  "Durable Handicraft": {
+  {
+    "name": "Durable Handicraft",
     "abilities": [
       "+counter_other"
     ]
   },
-  "Eager Construct": {
+  {
+    "name": "Eager Construct",
     "abilities": [
       "scry"
     ],
@@ -613,23 +694,26 @@
       "enters_the_battlefield"
     ]
   },
-  "Eddytrail Hawk": {
+  {
+    "name": "Eddytrail Hawk",
     "abilities": [
       "energy_sink",
       "energy_source",
-      "flying",
+      "Flying",
       "grant_flying"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Electrify": {
+  {
+    "name": "Electrify",
     "abilities": [
       "direct_damage_creature"
     ]
   },
-  "Electrostatic Pummeler": {
+  {
+    "name": "Electrostatic Pummeler",
     "abilities": [
       "buff_self",
       "energy_sink",
@@ -643,7 +727,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Elegant Edgecrafters": {
+  {
+    "name": "Elegant Edgecrafters",
     "abilities": [
       "+counter_self",
       "create_token",
@@ -653,88 +738,103 @@
       "enters_the_battlefield"
     ]
   },
-  "Eliminate the Competition": {
+  {
+    "name": "Eliminate the Competition",
     "abilities": [
       "removal"
     ]
   },
-  "Embraal Gear-Smasher": {
+  {
+    "name": "Embraal Gear-Smasher",
     "affinities": [
       "Artifact"
     ]
   },
-  "Empyreal Voyager": {
+  {
+    "name": "Empyreal Voyager",
     "abilities": [
       "energy_source",
-      "flying",
+      "Flying",
       "trample"
     ]
   },
-  "Enraged Giant": {
+  {
+    "name": "Enraged Giant",
     "abilities": [
       "haste",
       "improvise",
       "trample"
     ]
   },
-  "Essence Extraction": {
+  {
+    "name": "Essence Extraction",
     "abilities": [
       "direct_damage_player",
       "heal"
     ]
   },
-  "Essence Scatter": {
+  {
+    "name": "Essence Scatter",
     "abilities": [
       "counter"
     ]
   },
-  "Fabrication Module": {
+  {
+    "name": "Fabrication Module",
     "abilities": [
       "+counter_other"
     ]
   },
-  "Fan Bearer": {
+  {
+    "name": "Fan Bearer",
     "abilities": [
       "force_tap_creature"
     ]
   },
-  "Fatal Push": {
+  {
+    "name": "Fatal Push",
     "abilities": [
       "removal",
       "revolt"
     ]
   },
-  "Fateful Showdown": {
+  {
+    "name": "Fateful Showdown",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
     ]
   },
-  "Felidar Guardian": {
+  {
+    "name": "Felidar Guardian",
     "abilities": [
-      "flicker_other"
+      "Flicker"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Fen Hauler": {
+  {
+    "name": "Fen Hauler",
     "abilities": [
       "improvise",
       "unblockable"
     ]
   },
-  "Festering Mummy": {
+  {
+    "name": "Festering Mummy",
     "abilities": [
       "-counter_other"
     ]
   },
-  "Filigree Crawler": {
+  {
+    "name": "Filigree Crawler",
     "abilities": [
       "create_token"
     ]
   },
-  "Filigree Familiar": {
+  {
+    "name": "Filigree Familiar",
     "abilities": [
       "draw_cards",
       "heal"
@@ -743,7 +843,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Fireforger's Puzzleknot": {
+  {
+    "name": "Fireforger's Puzzleknot",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
@@ -752,7 +853,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Fling": {
+  {
+    "name": "Fling",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
@@ -761,29 +863,34 @@
       "Creature"
     ]
   },
-  "Floodwaters": {
+  {
+    "name": "Floodwaters",
     "abilities": [
       "cycling",
       "return_to_own_hand"
     ]
   },
-  "Fortuitous Find": {
+  {
+    "name": "Fortuitous Find",
     "abilities": [
       "graveyard_to_hand"
     ]
   },
-  "Foundry Assembler": {
+  {
+    "name": "Foundry Assembler",
     "abilities": [
       "improvise"
     ]
   },
-  "Foundry Screecher": {
+  {
+    "name": "Foundry Screecher",
     "abilities": [
       "buff_self",
-      "flying"
+      "Flying"
     ]
   },
-  "Fourth Bridge Prowler": {
+  {
+    "name": "Fourth Bridge Prowler",
     "abilities": [
       "debuff_other"
     ],
@@ -791,23 +898,27 @@
       "enters_the_battlefield"
     ]
   },
-  "Fragmentize": {
+  {
+    "name": "Fragmentize",
     "abilities": [
       "removal"
     ]
   },
-  "Fretwork Colony": {
+  {
+    "name": "Fretwork Colony",
     "abilities": [
       "+counter_self",
       "direct_damage_self"
     ]
   },
-  "Garruk's Horde": {
+  {
+    "name": "Garruk's Horde",
     "abilities": [
       "trample"
     ]
   },
-  "Gearseeker Serpent": {
+  {
+    "name": "Gearseeker Serpent",
     "abilities": [
       "unblockable"
     ],
@@ -815,34 +926,40 @@
       "Artifact"
     ]
   },
-  "Ghirapur Guide": {
+  {
+    "name": "Ghirapur Guide",
     "abilities": [
       "grant_unblockable"
     ]
   },
-  "Ghirapur Osprey": {
+  {
+    "name": "Ghirapur Osprey",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Giant Spectacle": {
+  {
+    "name": "Giant Spectacle",
     "abilities": [
       "buff_other",
       "grant_menace"
     ]
   },
-  "Giant Spider": {
+  {
+    "name": "Giant Spider",
     "abilities": [
       "reach"
     ]
   },
-  "Gifted Aetherborn": {
+  {
+    "name": "Gifted Aetherborn",
     "abilities": [
       "deathtouch",
       "lifelink"
     ]
   },
-  "Glassblower's Puzzleknot": {
+  {
+    "name": "Glassblower's Puzzleknot",
     "abilities": [
       "energy_source",
       "scry"
@@ -851,19 +968,22 @@
       "enters_the_battlefield"
     ]
   },
-  "Glimmer of Genius": {
+  {
+    "name": "Glimmer of Genius",
     "abilities": [
       "energy_source",
       "scry"
     ]
   },
-  "Glint-Sleeve Artisan": {
+  {
+    "name": "Glint-Sleeve Artisan",
     "abilities": [
       "+counter_self",
       "create_token"
     ]
   },
-  "Glint-Sleeve Siphoner": {
+  {
+    "name": "Glint-Sleeve Siphoner",
     "abilities": [
       "draw_cards",
       "energy_sink",
@@ -875,18 +995,21 @@
       "enters_the_battlefield"
     ]
   },
-  "Graceful Cat": {
+  {
+    "name": "Graceful Cat",
     "abilities": [
       "buff_self"
     ]
   },
-  "Greater Sandwurm": {
+  {
+    "name": "Greater Sandwurm",
     "abilities": [
       "cycling",
       "unblockable"
     ]
   },
-  "Gremlin Infestation": {
+  {
+    "name": "Gremlin Infestation",
     "abilities": [
       "create_token",
       "direct_damage_player"
@@ -895,19 +1018,22 @@
       "Artifact"
     ]
   },
-  "Harnessed Lightning": {
+  {
+    "name": "Harnessed Lightning",
     "abilities": [
       "direct_damage_creature",
       "energy_sink",
       "energy_source"
     ]
   },
-  "Hazardous Conditions": {
+  {
+    "name": "Hazardous Conditions",
     "abilities": [
       "debuff_other"
     ]
   },
-  "Herald of the Fair": {
+  {
+    "name": "Herald of the Fair",
     "abilities": [
       "buff_other"
     ],
@@ -915,103 +1041,121 @@
       "enters_the_battlefield"
     ]
   },
-  "Heroic Intervention": {
+  {
+    "name": "Heroic Intervention",
     "abilities": [
       "grant_hexproof",
       "grant_indestructable"
     ]
   },
-  "Highspire Artisan": {
+  {
+    "name": "Highspire Artisan",
     "abilities": [
       "+counter_self",
       "create_token",
       "reach"
     ]
   },
-  "Highspire Infusion": {
+  {
+    "name": "Highspire Infusion",
     "abilities": [
       "buff_other",
       "energy_source"
     ]
   },
-  "Hijack": {
+  {
+    "name": "Hijack",
     "abilities": [
       "gain_control_artifact",
       "gain_control_creature"
     ]
   },
-  "Hinterland Drake": {
+  {
+    "name": "Hinterland Drake",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Hungry Flames": {
+  {
+    "name": "Hungry Flames",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
     ]
   },
-  "Hunt the Weak": {
+  {
+    "name": "Hunt the Weak",
     "abilities": [
       "+counter_other"
     ]
   },
-  "Ice Over": {
+  {
+    "name": "Ice Over",
     "abilities": [
       "force_no_untap"
     ]
   },
-  "Illusionist's Stratagem": {
+  {
+    "name": "Illusionist's Stratagem",
     "abilities": [
       "draw_cards",
-      "flicker_other"
+      "Flicker"
     ]
   },
-  "Impeccable Timing": {
+  {
+    "name": "Impeccable Timing",
     "abilities": [
       "direct_damage_creature"
     ]
   },
-  "Implement of Combustion": {
+  {
+    "name": "Implement of Combustion",
     "abilities": [
       "direct_damage_player",
       "draw_cards"
     ]
   },
-  "Implement of Examination": {
+  {
+    "name": "Implement of Examination",
     "abilities": [
       "draw_cards"
     ]
   },
-  "Implement of Ferocity": {
+  {
+    "name": "Implement of Ferocity",
     "abilities": [
       "+counter_other",
       "draw_cards"
     ]
   },
-  "Implement of Improvement": {
+  {
+    "name": "Implement of Improvement",
     "abilities": [
       "draw_cards",
       "heal"
     ]
   },
-  "Implement of Malice": {
+  {
+    "name": "Implement of Malice",
     "abilities": [
       "draw_cards",
       "force_discard"
     ]
   },
-  "Initiate's Companion": {
+  {
+    "name": "Initiate's Companion",
     "abilities": [
       "untap"
     ]
   },
-  "Inspired Charge": {
+  {
+    "name": "Inspired Charge",
     "abilities": [
       "buff_others"
     ]
   },
-  "Inventor's Apprentice": {
+  {
+    "name": "Inventor's Apprentice",
     "abilities": [
       "buff_self"
     ],
@@ -1019,7 +1163,8 @@
       "Artifact"
     ]
   },
-  "Inventor's Goggles": {
+  {
+    "name": "Inventor's Goggles",
     "abilities": [
       "buff_other",
       "equip"
@@ -1028,14 +1173,16 @@
       "Artificer"
     ]
   },
-  "Iron League Steed": {
+  {
+    "name": "Iron League Steed",
     "abilities": [
       "haste",
       "+counter_self",
       "create_token"
     ]
   },
-  "Ironclad Revolutionary": {
+  {
+    "name": "Ironclad Revolutionary",
     "abilities": [
       "+counter_self",
       "direct_damage_player"
@@ -1047,12 +1194,14 @@
       "enters_the_battlefield"
     ]
   },
-  "Irontread Crusher": {
+  {
+    "name": "Irontread Crusher",
     "abilities": [
       "crew"
     ]
   },
-  "Janjeet Sentry": {
+  {
+    "name": "Janjeet Sentry",
     "abilities": [
       "energy_sink",
       "energy_source",
@@ -1062,16 +1211,18 @@
       "enters_the_battlefield"
     ]
   },
-  "Kambal, Consul of Allocation": {
+  {
+    "name": "Kambal, Consul of Allocation",
     "abilities": [
       "direct_damage_player",
       "heal"
     ]
   },
-  "Kefnet the Mindful": {
+  {
+    "name": "Kefnet the Mindful",
     "abilities": [
       "draw_cards",
-      "flying",
+      "Flying",
       "indestructable",
       "return_to_own_hand"
     ],
@@ -1079,7 +1230,8 @@
       "draw_cards"
     ]
   },
-  "Kujar Seedsculptor": {
+  {
+    "name": "Kujar Seedsculptor",
     "abilities": [
       "+counter_other"
     ],
@@ -1087,37 +1239,43 @@
       "enters_the_battlefield"
     ]
   },
-  "Larger Than Life": {
+  {
+    "name": "Larger Than Life",
     "abilities": [
       "buff_other",
       "grant_trample"
     ]
   },
-  "Lawless Broker": {
+  {
+    "name": "Lawless Broker",
     "abilities": [
       "+counter_other"
     ]
   },
-  "Leave in the Dust": {
+  {
+    "name": "Leave in the Dust",
     "abilities": [
       "draw_cards",
       "return_to_other_hand",
       "return_to_own_hand"
     ]
   },
-  "Lifecraft Awakening": {
+  {
+    "name": "Lifecraft Awakening",
     "abilities": [
       "+counter_other"
     ]
   },
-  "Lifecraft Cavalry": {
+  {
+    "name": "Lifecraft Cavalry",
     "abilities": [
       "+counter_self",
       "revolt",
       "trample"
     ]
   },
-  "Lifecrafter's Gift": {
+  {
+    "name": "Lifecrafter's Gift",
     "abilities": [
       "+counter_other"
     ],
@@ -1126,19 +1284,22 @@
       "+counter_self"
     ]
   },
-  "Live Fast": {
+  {
+    "name": "Live Fast",
     "abilities": [
       "direct_damage_self",
       "draw_cards",
       "energy_source"
     ]
   },
-  "Make Obsolete": {
+  {
+    "name": "Make Obsolete",
     "abilities": [
       "debuff_other"
     ]
   },
-  "Malfunction": {
+  {
+    "name": "Malfunction",
     "abilities": [
       "force_no_untap"
     ],
@@ -1146,7 +1307,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Manticore of the Gauntlet": {
+  {
+    "name": "Manticore of the Gauntlet",
     "abilities": [
       "-counter_other",
       "direct_damage_player"
@@ -1155,7 +1317,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Maulfist Revolutionary": {
+  {
+    "name": "Maulfist Revolutionary",
     "abilities": [
       "trample"
     ],
@@ -1163,7 +1326,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Maverick Thopterist": {
+  {
+    "name": "Maverick Thopterist",
     "abilities": [
       "improvise",
       "create_token"
@@ -1172,13 +1336,15 @@
       "enters_the_battlefield"
     ]
   },
-  "Mechanized Production": {
+  {
+    "name": "Mechanized Production",
     "abilities": [
       "copy",
       "win_timer"
     ]
   },
-  "Merchant's Dockhand": {
+  {
+    "name": "Merchant's Dockhand",
     "abilities": [
       "draw_cards",
       "scry"
@@ -1187,19 +1353,22 @@
       "Artifact"
     ]
   },
-  "Merciless Javelineer": {
+  {
+    "name": "Merciless Javelineer",
     "abilities": [
       "-counter_other",
       "grant_cannot_block"
     ]
   },
-  "Metallic Rebuke": {
+  {
+    "name": "Metallic Rebuke",
     "abilities": [
       "improvise",
       "counter"
     ]
   },
-  "Metalspinner's Puzzleknot": {
+  {
+    "name": "Metalspinner's Puzzleknot",
     "abilities": [
       "direct_damage_self",
       "draw_cards"
@@ -1208,18 +1377,21 @@
       "enters_the_battlefield"
     ]
   },
-  "Mighty Leap": {
+  {
+    "name": "Mighty Leap",
     "abilities": [
       "buff_other",
       "grant_flying"
     ]
   },
-  "Mind Rot": {
+  {
+    "name": "Mind Rot",
     "abilities": [
       "force_discard_cards"
     ]
   },
-  "Minister of Inquiries": {
+  {
+    "name": "Minister of Inquiries",
     "abilities": [
       "energy_source",
       "energy_sink",
@@ -1229,18 +1401,21 @@
       "enters_the_battlefield"
     ]
   },
-  "Mobile Garrison": {
+  {
+    "name": "Mobile Garrison",
     "abilities": [
       "crew",
       "untap"
     ]
   },
-  "Monstrous Onslaught": {
+  {
+    "name": "Monstrous Onslaught",
     "abilities": [
       "direct_damage_creature"
     ]
   },
-  "Morbid Curiosity": {
+  {
+    "name": "Morbid Curiosity",
     "abilities": [
       "draw_cards"
     ],
@@ -1249,7 +1424,8 @@
       "Creature"
     ]
   },
-  "Multiform Wonder": {
+  {
+    "name": "Multiform Wonder",
     "abilities": [
       "buff_self",
       "energy_sink",
@@ -1262,49 +1438,57 @@
       "enters_the_battlefield"
     ]
   },
-  "Narnam Cobra": {
+  {
+    "name": "Narnam Cobra",
     "abilities": [
       "deathtouch"
     ]
   },
-  "Nef-Crop Entangler": {
+  {
+    "name": "Nef-Crop Entangler",
     "abilities": [
       "buff_self",
       "exert"
     ]
   },
-  "Negate": {
+  {
+    "name": "Negate",
     "abilities": [
       "counter"
     ]
   },
-  "Night Market Aeronaut": {
+  {
+    "name": "Night Market Aeronaut",
     "abilities": [
       "+counter_self",
-      "flying",
+      "Flying",
       "revolt"
     ]
   },
-  "Night Market Guard": {
+  {
+    "name": "Night Market Guard",
     "abilities": [
       "multi_block"
     ]
   },
-  "Night Market Lookout": {
+  {
+    "name": "Night Market Lookout",
     "abilities": [
       "direct_damage_player",
       "heal"
     ]
   },
-  "Nightmare": {
+  {
+    "name": "Nightmare",
     "abilities": [
-      "flying"
+      "Flying"
     ],
     "affinities": [
       "Swamp"
     ]
   },
-  "Nimble Innovator": {
+  {
+    "name": "Nimble Innovator",
     "abilities": [
       "draw_cards"
     ],
@@ -1312,22 +1496,26 @@
       "enters_the_battlefield"
     ]
   },
-  "Nimble-Blade Khenra": {
+  {
+    "name": "Nimble-Blade Khenra",
     "abilities": [
       "prowess"
     ]
   },
-  "Ninth Bridge Patrol": {
+  {
+    "name": "Ninth Bridge Patrol",
     "abilities": [
       "+counter_self"
     ]
   },
-  "Oakenform": {
+  {
+    "name": "Oakenform",
     "abilities": [
       "buff_other"
     ]
   },
-  "Oath of Ajani": {
+  {
+    "name": "Oath of Ajani",
     "abilities": [
       "+counter_other"
     ],
@@ -1338,7 +1526,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Ornery Kudu": {
+  {
+    "name": "Ornery Kudu",
     "abilities": [
       "-counter_other"
     ],
@@ -1346,30 +1535,35 @@
       "enters_the_battlefield"
     ]
   },
-  "Outland Boar": {
+  {
+    "name": "Outland Boar",
     "abilities": [
       "unblockable"
     ]
   },
-  "Oviya Pashiri, Sage Lifecrafter": {
+  {
+    "name": "Oviya Pashiri, Sage Lifecrafter",
     "abilities": [
       "create_token"
     ]
   },
-  "Pacification Array": {
+  {
+    "name": "Pacification Array",
     "abilities": [
       "force_tap_artifact",
       "force_tap_creature"
     ]
   },
-  "Painful Lesson": {
+  {
+    "name": "Painful Lesson",
     "abilities": [
       "direct_damage_player",
       "direct_damage_self",
       "draw_cards"
     ]
   },
-  "Peema Aether-Seer": {
+  {
+    "name": "Peema Aether-Seer",
     "abilities": [
       "energy_source",
       "energy_sink",
@@ -1379,7 +1573,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Peema Outrider": {
+  {
+    "name": "Peema Outrider",
     "abilities": [
       "+counter_self",
       "create_token",
@@ -1389,7 +1584,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Pia Nalaar": {
+  {
+    "name": "Pia Nalaar",
     "abilities": [
       "buff_other",
       "create_token",
@@ -1402,34 +1598,40 @@
       "enters_the_battlefield"
     ]
   },
-  "Pouncing Cheetah": {
+  {
+    "name": "Pouncing Cheetah",
     "abilities": [
       "flash"
     ]
   },
-  "Prakhata Pillar-Bug": {
+  {
+    "name": "Prakhata Pillar-Bug",
     "abilities": [
       "lifelink"
     ]
   },
-  "Precise Strike": {
+  {
+    "name": "Precise Strike",
     "abilities": [
       "buff_other",
       "grant_first_strike"
     ]
   },
-  "Pressure Point": {
+  {
+    "name": "Pressure Point",
     "abilities": [
       "draw_cards",
       "force_tap_creature"
     ]
   },
-  "Prey Upon": {
+  {
+    "name": "Prey Upon",
     "abilities": [
       "fight"
     ]
   },
-  "Prophetic Prism": {
+  {
+    "name": "Prophetic Prism",
     "abilities": [
       "draw_cards",
       "mana_transmute"
@@ -1438,24 +1640,28 @@
       "enters_the_battlefield"
     ]
   },
-  "Protection of the Hekma": {
+  {
+    "name": "Protection of the Hekma",
     "abilities": [
       "prevent_damage"
     ]
   },
-  "Pursue Glory": {
+  {
+    "name": "Pursue Glory",
     "abilities": [
       "buff_others",
       "cycling"
     ]
   },
-  "Pyramid of the Pantheon": {
+  {
+    "name": "Pyramid of the Pantheon",
     "abilities": [
       "mana_acceleration",
       "mana_transmute"
     ]
   },
-  "Quicksmith Genius": {
+  {
+    "name": "Quicksmith Genius",
     "abilities": [
       "discard_cards",
       "draw_cards"
@@ -1464,12 +1670,14 @@
       "Artifact"
     ]
   },
-  "Raise Dead": {
+  {
+    "name": "Raise Dead",
     "abilities": [
       "return_own_to_hand"
     ]
   },
-  "Ravenous Intruder": {
+  {
+    "name": "Ravenous Intruder",
     "abilities": [
       "buff_self"
     ],
@@ -1477,23 +1685,26 @@
       "Artifact"
     ]
   },
-  "Reckless Fireweaver": {
+  {
+    "name": "Reckless Fireweaver",
     "abilities": [
       "direct_damage_player"
     ],
     "affinities": [
       "Artifact",
-      "flicker_other"
+      "Flicker"
     ]
   },
-  "Reckless Racer": {
+  {
+    "name": "Reckless Racer",
     "abilities": [
       "discard_cards",
       "draw_cards",
       "first_strike"
     ]
   },
-  "Refurbish": {
+  {
+    "name": "Refurbish",
     "abilities": [
       "return_to_battlefield"
     ],
@@ -1501,37 +1712,43 @@
       "Artifact"
     ]
   },
-  "Renegade Freighter": {
+  {
+    "name": "Renegade Freighter",
     "abilities": [
       "buff_self",
       "crew",
       "trample"
     ]
   },
-  "Renegade Map": {
+  {
+    "name": "Renegade Map",
     "abilities": [
       "tutor_land"
     ]
   },
-  "Renegade Rallier": {
+  {
+    "name": "Renegade Rallier",
     "abilities": [
       "return_to_battlefield",
       "revolt"
     ]
   },
-  "Renegade's Getaway": {
+  {
+    "name": "Renegade's Getaway",
     "abilities": [
       "create_token",
       "indestructible"
     ]
   },
-  "Reservoir Walker": {
+  {
+    "name": "Reservoir Walker",
     "abilities": [
       "energy_source",
       "heal"
     ]
   },
-  "Resourceful Return": {
+  {
+    "name": "Resourceful Return",
     "abilities": [
       "draw_cards",
       "return_to_hand"
@@ -1540,34 +1757,40 @@
       "Artifact"
     ]
   },
-  "Restoration Specialist": {
+  {
+    "name": "Restoration Specialist",
     "abilities": [
       "return_to_hand"
     ]
   },
-  "Reverse Engineer": {
+  {
+    "name": "Reverse Engineer",
     "abilities": [
       "draw_cards",
       "improvise"
     ]
   },
-  "Revoke Privileges": {
+  {
+    "name": "Revoke Privileges",
     "abilities": [
       "grant_cannot_attack",
       "grant_cannot_block"
     ]
   },
-  "Revolutionary Rebuff": {
+  {
+    "name": "Revolutionary Rebuff",
     "abilities": [
       "counter"
     ]
   },
-  "Ridgescale Tusker": {
+  {
+    "name": "Ridgescale Tusker",
     "abilities": [
       "+counter_other"
     ]
   },
-  "Riparian Tiger": {
+  {
+    "name": "Riparian Tiger",
     "abilities": [
       "buff_self",
       "energy_sink",
@@ -1575,13 +1798,15 @@
       "trample"
     ]
   },
-  "Rishkar's Expertise": {
+  {
+    "name": "Rishkar's Expertise",
     "abilities": [
       "draw_cards",
       "free_cast"
     ]
   },
-  "Rogue Refiner": {
+  {
+    "name": "Rogue Refiner",
     "abilities": [
       "draw_cards",
       "energy_sink"
@@ -1590,24 +1815,28 @@
       "enters_the_battlefield"
     ]
   },
-  "Rootwalla": {
+  {
+    "name": "Rootwalla",
     "abilities": [
       "buff_self"
     ]
   },
-  "Ruinous Gremlin": {
+  {
+    "name": "Ruinous Gremlin",
     "abilities": [
       "removal"
     ]
   },
-  "Rush of Vitality": {
+  {
+    "name": "Rush of Vitality",
     "abilities": [
       "buff_other",
       "grant_indestructible",
       "grant_lifelink"
     ]
   },
-  "Ruthless Sniper": {
+  {
+    "name": "Ruthless Sniper",
     "abilities": [
       "-counter_other"
     ],
@@ -1615,7 +1844,8 @@
       "cycling"
     ]
   },
-  "Sage of Shaila's Claim": {
+  {
+    "name": "Sage of Shaila's Claim",
     "abilities": [
       "energy_source"
     ],
@@ -1623,12 +1853,14 @@
       "enters_the_battlefield"
     ]
   },
-  "Scarab Feast": {
+  {
+    "name": "Scarab Feast",
     "abilities": [
       "cycling"
     ]
   },
-  "Scrapper Champion": {
+  {
+    "name": "Scrapper Champion",
     "abilities": [
       "buff_self",
       "double_strike",
@@ -1639,30 +1871,35 @@
       "enters_the_battlefield"
     ]
   },
-  "Select for Inspection": {
+  {
+    "name": "Select for Inspection",
     "abilities": [
       "return_opponent_to_hand",
       "return_own_to_hand",
       "scry"
     ]
   },
-  "Sengir Vampire": {
+  {
+    "name": "Sengir Vampire",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Seraph of the Suns": {
+  {
+    "name": "Seraph of the Suns",
     "abilities": [
-      "flying",
+      "Flying",
       "indestructible"
     ]
   },
-  "Serra Angel": {
+  {
+    "name": "Serra Angel",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Servo Schematic": {
+  {
+    "name": "Servo Schematic",
     "abilities": [
       "create_token"
     ],
@@ -1670,26 +1907,30 @@
       "enters_the_battlefield"
     ]
   },
-  "Shadowstorm Vizier": {
+  {
+    "name": "Shadowstorm Vizier",
     "abilities": [
       "buff_self",
-      "flying"
+      "Flying"
     ],
     "affinities": [
       "cycling"
     ]
   },
-  "Shed Weakness": {
+  {
+    "name": "Shed Weakness",
     "abilities": [
       "buff_other"
     ]
   },
-  "Shielded Aether Thief": {
+  {
+    "name": "Shielded Aether Thief",
     "abilities": [
       "flash"
     ]
   },
-  "Shipwreck Moray": {
+  {
+    "name": "Shipwreck Moray",
     "abilities": [
       "buff_self",
       "energy_sink",
@@ -1699,44 +1940,51 @@
       "enters_the_battlefield"
     ]
   },
-  "Shivan Dragon": {
+  {
+    "name": "Shivan Dragon",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Shock": {
+  {
+    "name": "Shock",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
     ]
   },
-  "Silkweaver Elite": {
+  {
+    "name": "Silkweaver Elite",
     "abilities": [
       "draw_cards",
       "reach",
       "revolt"
     ]
   },
-  "Sky Skiff": {
+  {
+    "name": "Sky Skiff",
     "abilities": [
       "crew",
-      "flying"
+      "Flying"
     ]
   },
-  "Skyship Plunderer": {
+  {
+    "name": "Skyship Plunderer",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Skyship Stalker": {
+  {
+    "name": "Skyship Stalker",
     "abilities": [
       "buff_self",
       "first_strike",
-      "flying",
+      "Flying",
       "haste"
     ]
   },
-  "Sly Requisitioner": {
+  {
+    "name": "Sly Requisitioner",
     "abilities": [
       "create_token",
       "improvise"
@@ -1745,13 +1993,15 @@
       "Artifact"
     ]
   },
-  "Snare Thopter": {
+  {
+    "name": "Snare Thopter",
     "abilities": [
-      "flying",
+      "Flying",
       "haste"
     ]
   },
-  "Soulstinger": {
+  {
+    "name": "Soulstinger",
     "abilities": [
       "-counter_other"
     ],
@@ -1759,28 +2009,32 @@
       "enters_the_battlefield"
     ]
   },
-  "Speedway Fanatic": {
+  {
+    "name": "Speedway Fanatic",
     "abilities": [
       "haste"
     ]
   },
-  "Sphinx of Magosi": {
+  {
+    "name": "Sphinx of Magosi",
     "abilities": [
       "+counter_self",
       "draw_cards",
-      "flying"
+      "Flying"
     ]
   },
-  "Spidery Grasp": {
+  {
+    "name": "Spidery Grasp",
     "abilities": [
       "buff_other",
       "grant_reach",
       "untap_creature"
     ]
   },
-  "Spire Patrol": {
+  {
+    "name": "Spire Patrol",
     "abilities": [
-      "flying",
+      "Flying",
       "force_no_untap",
       "force_tap_creature"
     ],
@@ -1788,12 +2042,14 @@
       "enters_the_battlefield"
     ]
   },
-  "Spireside Infiltrator": {
+  {
+    "name": "Spireside Infiltrator",
     "abilities": [
       "direct_damage_player"
     ]
   },
-  "Spontaneous Artist": {
+  {
+    "name": "Spontaneous Artist",
     "abilities": [
       "energy_source",
       "energy_sink",
@@ -1803,39 +2059,46 @@
       "enters_the_battlefield"
     ]
   },
-  "Stalking Tiger": {
+  {
+    "name": "Stalking Tiger",
     "abilities": [
       "one_on_one"
     ]
   },
-  "Standing Troops": {
+  {
+    "name": "Standing Troops",
     "abilities": [
       "vigilance"
     ]
   },
-  "Stealer of Secrets": {
+  {
+    "name": "Stealer of Secrets",
     "abilities": [
       "draw_cards"
     ]
   },
-  "Stormfront Pegasus": {
+  {
+    "name": "Stormfront Pegasus",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Subtle Strike": {
+  {
+    "name": "Subtle Strike",
     "abilities": [
       "+counter_other",
       "-counter_other"
     ]
   },
-  "Supernatural Stamina": {
+  {
+    "name": "Supernatural Stamina",
     "abilities": [
       "buff_other",
       "return_to_battlefield"
     ]
   },
-  "Supply Caravan": {
+  {
+    "name": "Supply Caravan",
     "abilities": [
       "create_token"
     ],
@@ -1843,35 +2106,41 @@
       "enters_the_battlefield"
     ]
   },
-  "Sweatworks Brawler": {
+  {
+    "name": "Sweatworks Brawler",
     "abilities": [
       "improvise"
     ]
   },
-  "Tah-Crop Elite": {
+  {
+    "name": "Tah-Crop Elite",
     "abilities": [
       "buff_other",
       "exert",
-      "flying"
+      "Flying"
     ]
   },
-  "Take Down": {
+  {
+    "name": "Take Down",
     "abilities": [
       "direct_damage_creature"
     ]
   },
-  "Take into Custody": {
+  {
+    "name": "Take into Custody",
     "abilities": [
       "force_no_untap",
       "force_tap"
     ]
   },
-  "Tattered Mummy": {
+  {
+    "name": "Tattered Mummy",
     "abilities": [
       "direct_damage_player"
     ]
   },
-  "Tezzeret's Touch": {
+  {
+    "name": "Tezzeret's Touch",
     "abilities": [
       "buff_other",
       "return_to_own_hand"
@@ -1880,7 +2149,8 @@
       "Artifact"
     ]
   },
-  "Thriving Grubs": {
+  {
+    "name": "Thriving Grubs",
     "abilities": [
       "+counter_self",
       "energy_sink",
@@ -1890,7 +2160,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Thriving Ibex": {
+  {
+    "name": "Thriving Ibex",
     "abilities": [
       "+counter_self",
       "energy_sink",
@@ -1900,7 +2171,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Thriving Rats": {
+  {
+    "name": "Thriving Rats",
     "abilities": [
       "+counter_self",
       "energy_sink",
@@ -1910,12 +2182,14 @@
       "enters_the_battlefield"
     ]
   },
-  "Thundering Giant": {
+  {
+    "name": "Thundering Giant",
     "abilities": [
       "haste"
     ]
   },
-  "Tidy Conclusion": {
+  {
+    "name": "Tidy Conclusion",
     "abilities": [
       "heal",
       "removal"
@@ -1924,7 +2198,8 @@
       "Artifact"
     ]
   },
-  "Toolcraft Exemplar": {
+  {
+    "name": "Toolcraft Exemplar",
     "abilities": [
       "buff_self",
       "first_strike"
@@ -1933,18 +2208,21 @@
       "Artifact"
     ]
   },
-  "Torch Gauntlet": {
+  {
+    "name": "Torch Gauntlet",
     "abilities": [
       "buff_other",
       "equip"
     ]
   },
-  "Treasure Keeper": {
+  {
+    "name": "Treasure Keeper",
     "abilities": [
       "free_cast"
     ]
   },
-  "Trespasser's Curse": {
+  {
+    "name": "Trespasser's Curse",
     "abilities": [
       "direct_damage_player",
       "heal"
@@ -1953,7 +2231,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Trial of Ambition": {
+  {
+    "name": "Trial of Ambition",
     "abilities": [
       "removal"
     ],
@@ -1964,7 +2243,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Trial of Knowledge": {
+  {
+    "name": "Trial of Knowledge",
     "abilities": [
       "draw_cards"
     ],
@@ -1975,7 +2255,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Trial of Solidarity": {
+  {
+    "name": "Trial of Solidarity",
     "abilities": [
       "buff_other",
       "grant_vigilance"
@@ -1987,7 +2268,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Trial of Strength": {
+  {
+    "name": "Trial of Strength",
     "abilities": [
       "create_token"
     ],
@@ -1998,7 +2280,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Trial of Zeal": {
+  {
+    "name": "Trial of Zeal",
     "abilities": [
       "direct_damage_creature",
       "direct_damage_player"
@@ -2010,43 +2293,50 @@
       "enters_the_battlefield"
     ]
   },
-  "Tricks of the Trade": {
+  {
+    "name": "Tricks of the Trade",
     "abilities": [
       "buff_other",
       "grant_unblockable"
     ]
   },
-  "Unbridled Growth": {
+  {
+    "name": "Unbridled Growth",
     "abilities": [
       "draw_cards",
       "mana_transmute"
     ]
   },
-  "Universal Solvent": {
+  {
+    "name": "Universal Solvent",
     "abilities": [
       "removal"
     ]
   },
-  "Untamed Hunger": {
+  {
+    "name": "Untamed Hunger",
     "abilities": [
       "buff_other",
       "grant_menace"
     ]
   },
-  "Untethered Express": {
+  {
+    "name": "Untethered Express",
     "abilities": [
       "+counter_self",
       "crew",
       "trample"
     ]
   },
-  "Unwavering Initiate": {
+  {
+    "name": "Unwavering Initiate",
     "abilities": [
       "embalm",
       "vigilance"
     ]
   },
-  "Vedalken Blademaster": {
+  {
+    "name": "Vedalken Blademaster",
     "abilities": [
       "prowess"
     ],
@@ -2054,19 +2344,22 @@
       "!Creature"
     ]
   },
-  "Verdant Automaton": {
+  {
+    "name": "Verdant Automaton",
     "abilities": [
       "+counter_self"
     ]
   },
-  "Victory's Herald": {
+  {
+    "name": "Victory's Herald",
     "abilities": [
-      "flying",
+      "Flying",
       "grant_flying",
       "grant_lifelink"
     ]
   },
-  "Voltaic Brawler": {
+  {
+    "name": "Voltaic Brawler",
     "abilities": [
       "buff_self",
       "energy_sink",
@@ -2077,7 +2370,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Warfire Javelineer": {
+  {
+    "name": "Warfire Javelineer",
     "abilities": [
       "direct_damage_creature"
     ],
@@ -2089,17 +2383,20 @@
       "enters_the_battlefield"
     ]
   },
-  "Watchers of the Dead": {
+  {
+    "name": "Watchers of the Dead",
     "abilities": [
       "force_exile"
     ]
   },
-  "Watchful Automaton": {
+  {
+    "name": "Watchful Automaton",
     "abilities": [
       "scry"
     ]
   },
-  "Weaponcraft Enthusiast": {
+  {
+    "name": "Weaponcraft Enthusiast",
     "abilities": [
       "+counter_self",
       "create_token"
@@ -2108,17 +2405,20 @@
       "enters_the_battlefield"
     ]
   },
-  "Welder Automaton": {
+  {
+    "name": "Welder Automaton",
     "abilities": [
       "direct_damage_player"
     ]
   },
-  "Weldfast Monitor": {
+  {
+    "name": "Weldfast Monitor",
     "abilities": [
       "menace"
     ]
   },
-  "Welding Sparks": {
+  {
+    "name": "Welding Sparks",
     "abilities": [
       "direct_damage_creature"
     ],
@@ -2126,12 +2426,14 @@
       "Artifact"
     ]
   },
-  "Whir of Invention": {
+  {
+    "name": "Whir of Invention",
     "abilities": [
       "improvise"
     ]
   },
-  "Whirler Virtuoso": {
+  {
+    "name": "Whirler Virtuoso",
     "abilities": [
       "create_token",
       "energy_sink",
@@ -2141,7 +2443,8 @@
       "enters_the_battlefield"
     ]
   },
-  "Wild Wanderer": {
+  {
+    "name": "Wild Wanderer",
     "abilities": [
       "mana_acceleration"
     ],
@@ -2149,43 +2452,50 @@
       "enters_the_battlefield"
     ]
   },
-  "Wily Bandar": {
+  {
+    "name": "Wily Bandar",
     "abilities": [
       "indestructible"
     ]
   },
-  "Wind Drake": {
+  {
+    "name": "Wind Drake",
     "abilities": [
-      "flying"
+      "Flying"
     ]
   },
-  "Wind-Kin Raiders": {
+  {
+    "name": "Wind-Kin Raiders",
     "abilities": [
       "improvise",
-      "flying"
+      "Flying"
     ]
   },
-  "Winds of Rebuke": {
+  {
+    "name": "Winds of Rebuke",
     "abilities": [
       "return_opponent_to_hand",
       "return_own_to_hand"
     ]
   },
-  "Wing Snare": {
+  {
+    "name": "Wing Snare",
     "abilities": [
       "removal"
     ]
   },
-  "Wispweaver Angel": {
+  {
+    "name": "Wispweaver Angel",
     "abilities": [
-      "flying",
-      "flicker_other"
+      "Flying",
+      "Flicker"
     ],
     "triggers": [
       "enters_the_battlefield"
     ]
   },
-  "Woodweaver's Puzzleknot": {
+  {
+    "name": "Woodweaver's Puzzleknot",
     "abilities": [
       "energy_source",
       "heal"
@@ -2194,20 +2504,23 @@
       "enters_the_battlefield"
     ]
   },
-  "Workshop Assistant": {
+  {
+    "name": "Workshop Assistant",
     "abilities": [
       "graveyard_to_hand"
     ]
   },
-  "Wrangle": {
+  {
+    "name": "Wrangle",
     "abilities": [
       "control"
     ]
   },
-  "Yahenni's Expertise": {
+  {
+    "name": "Yahenni's Expertise",
     "abilities": [
       "debuff_other",
       "free_cast"
     ]
   }
-}
+]
