@@ -64,7 +64,9 @@ luna::response add_abilities_vote(const luna::request &request)
         if(result.status_code==404)
             return {404, "Invalid card name \""+card_name+"\""};
 
-        validated_names_.emplace(card_name);
+        auto card_obj = nlohmann::json::parse(result.text);
+
+        validated_names_.emplace(card_name); //TODO this is naive, and opens up an attack vector that I don't like.
     }
 
     // What we do is construct a vote for abilities this card exhibits. In the future, we will permit
