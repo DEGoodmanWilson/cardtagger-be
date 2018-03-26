@@ -31,7 +31,28 @@ namespace card_controller
 static mongocxx::client mongo_conn_;
 static mongocxx::collection card_annotations_;
 
-std::unordered_set<std::string> validated_names_;
+
+struct card_name_hasher_ {
+public:
+    size_t operator()(const std::string & str) const {
+        std::string str_lower{str};
+        std::transform(str_lower.begin(), str_lower.end(), str_lower.begin(), tolower);
+        return std::hash<std::string>()(str_lower);
+    }
+};
+
+struct card_name_comparator_ {
+public:
+    bool operator()(const std::string & str1, const std::string & str2) const {
+        std::string str1_lower{str1};
+        std::string str2_lower{str2};
+        std::transform(str1_lower.begin(), str1_lower.end(), str1_lower.begin(), tolower);
+        std::transform(str2_lower.begin(), str2_lower.end(), str2_lower.begin(), tolower);
+        return str1_lower == str2_lower;
+    }
+};
+
+std::unordered_set<std::string, card_name_hasher_, card_name_comparator_> validated_names_;
 
 bool authenticate_(const luna::request &request)
 {
@@ -57,7 +78,8 @@ luna::response add_abilities_vote(const luna::request &request)
 
     // TODO validate card name!
     std::string card_name = request.matches[1];
-    if(!validated_names_.count(card_name))
+
+    if(validated_names_.count(card_name) == 0)
     {
         //not in cache…check scryfall
         auto result = cpr::Get(cpr::Url{"https://api.scryfall.com/cards/named"}, cpr::Parameters{{"exact", card_name}});
@@ -66,7 +88,9 @@ luna::response add_abilities_vote(const luna::request &request)
 
         auto card_obj = nlohmann::json::parse(result.text);
 
-        validated_names_.emplace(card_name); //TODO this is naive, and opens up an attack vector that I don't like.
+        // This is safer, as we are now cacheing card names in a case insensitive way
+        // As there are only some 16,000 different legal Magic Card names, I think this is safe as is.
+        validated_names_.insert(card_name);
     }
 
     // What we do is construct a vote for abilities this card exhibits. In the future, we will permit
