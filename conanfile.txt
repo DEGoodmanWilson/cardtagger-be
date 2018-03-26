@@ -17,12 +17,12 @@
 #
 
 [requires]
-luna/[~=4.0]@DEGoodmanWilson/stable
-nl-json/[~=2.1]@genvidtech/1.4.0
+luna/[~=5.0]@DEGoodmanWilson/stable
+jsonformoderncpp/[~= 3.1]@vthiery/stable
 
 # for testing
-cpr/1.2.0@DEGoodmanWilson/stable
-Catch/1.9.6@bincrafters/stable
+cpr/[~=1.3]@DEGoodmanWilson/stable
+Catch/[~=1.9]@bincrafters/stable
 
 [generators]
 cmake

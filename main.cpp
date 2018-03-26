@@ -19,7 +19,7 @@
 #include <iostream>
 
 #include <luna/luna.h>
-#include <json.hpp>
+#include <nlohmann/json.hpp>
 
 #include "magique/catalog.h"
 #include "controllers/auth_controller.h"
@@ -75,10 +75,12 @@ int main(int, char **)
         }
     }
 
-    // add endpoint handlers
-    luna::router api{"/api/v1"};
+    luna::server server;
 
-    api.set_mime_type("application/json");
+    // add endpoint handlers
+    auto api = server.create_router("/api/v1");
+
+    api->set_mime_type("application/json");
 
     auth_controller::create(api);
     card_controller card_c(api);
@@ -86,8 +88,6 @@ int main(int, char **)
     // fire up the webserver
     luna::set_error_logger(error_logger);
     luna::set_access_logger(access_logger);
-    luna::server server;
-    server.add_router(api);
     server.start(port);
 
     return 0;

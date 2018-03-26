@@ -16,15 +16,30 @@
 // Copyright © 2018 D.E. Goodman-Wilson
 //
 
-#pragma once
+#include "card_delta.h"
 
-#include <luna/luna.h>
-#include <nlohmann/json.hpp>
-
-
-namespace auth_controller
+namespace magique
 {
 
-void create(std::shared_ptr<luna::router> router);
+void to_json(nlohmann::json &j, const card_delta &p)
+{
+    j = nlohmann::json::object();
 
-};
+    j["user_id"] = p.user_id;
+
+    j["additions"] = nlohmann::json::object();
+    j["subtractions"] = nlohmann::json::object();
+
+    j["additions"]["abilities"] = p.additions.abilities;
+    j["subtractions"]["abilities"] = p.subtractions.abilities;
+}
+
+void from_json(const nlohmann::json &j, card_delta &p)
+{
+    p.user_id = j.at("user_id").get<std::string>();
+
+    p.additions.abilities = j.at("additions").at("abilities").get<std::set<std::string>>();
+    p.subtractions.abilities = j.at("subtractions").at("abilities").get<std::set<std::string>>();
+}
+
+}

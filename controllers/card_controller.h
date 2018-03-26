@@ -19,14 +19,14 @@
 #pragma once
 
 #include <luna/luna.h>
-#include <json.hpp>
+#include <nlohmann/json.hpp>
 #include "../magique/catalog.h"
 
 
 class card_controller
 {
 public:
-    card_controller(luna::router &router);
+    card_controller(std::shared_ptr<luna::router> router);
 
 private:
     // TODO PIMPL this.

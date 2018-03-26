@@ -23,9 +23,8 @@
 #include <locale>
 #include <set>
 #include <unordered_map>
-#include <json.hpp>
-// TODO I gotta fix this #include <experimental/optional>
-#include <luna/optional.hpp>
+#include <nlohmann/json.hpp>
+#include <experimental/optional>
 
 namespace magique
 {

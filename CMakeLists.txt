@@ -34,7 +34,7 @@ set(SOURCE_FILES
         magique/catalog.h magique/catalog.cpp
         controllers/auth_controller.h controllers/auth_controller.cpp
         main.cpp
-        models/auth.cpp models/auth.h controllers/card_controller.cpp controllers/card_controller.h)
+        models/auth.cpp models/auth.h controllers/card_controller.cpp controllers/card_controller.h magique/card_delta.cpp magique/card_delta.h)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 

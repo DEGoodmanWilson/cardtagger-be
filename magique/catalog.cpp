@@ -19,7 +19,7 @@
 #include "catalog.h"
 
 #include <exception>
-
+#include <iostream>
 #include <bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/json.hpp>
 

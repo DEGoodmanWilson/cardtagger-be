@@ -29,14 +29,14 @@ luna::response test(const luna::request &request);
 luna::response logout(const luna::request &request);
 
 
-void create(luna::router &router)
+void create(std::shared_ptr<luna::router> router)
 {
     // THIS IS TERRIBLE, do better
-    router.handle_request(luna::request_method::POST, "/user/create", create_account, {{"username", true}, {"password", true}});
-//    router.handle_request(luna::request_method::DELETE, "/user", delete_account, {{"key", true}});
-    router.handle_request(luna::request_method::GET, "/user/login", login);
-//    router.handle_request(luna::request_method::GET, "/user/test", test, {{"key", true}});
-    router.handle_request(luna::request_method::GET, "/user/logout", logout);
+    router->handle_request(luna::request_method::POST, "/user/create", create_account, {{"username", true}, {"password", true}});
+//    router->handle_request(luna::request_method::DELETE, "/user", delete_account, {{"key", true}});
+    router->handle_request(luna::request_method::GET, "/user/login", login);
+//    router->handle_request(luna::request_method::GET, "/user/test", test, {{"key", true}});
+    router->handle_request(luna::request_method::GET, "/user/logout", logout);
 }
 
 
