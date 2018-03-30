@@ -84,7 +84,7 @@ int main(int, char **)
 
     api->set_mime_type("application/json");
 
-    card_controller::create(api);
+    card_controller card_controller{api};
 
     // fire up the webserver
     luna::set_error_logger(error_logger);

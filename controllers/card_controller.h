@@ -20,9 +20,13 @@
 
 #include <luna/luna.h>
 
-namespace card_controller
+class card_controller
 {
+public:
+    card_controller(std::shared_ptr<luna::router> router);
 
-void create(std::shared_ptr<luna::router> router);
+private:
+    class card_controller_impl_;
 
-}
+    std::shared_ptr<card_controller_impl_> impl_;
+};
